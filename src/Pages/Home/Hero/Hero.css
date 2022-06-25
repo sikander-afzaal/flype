@@ -4,21 +4,20 @@
   align-items: center;
   flex-direction: column;
   width: 100%;
-  max-width: 1200px;
-  min-height: 800px;
+  max-width: 1000px;
   gap: 6rem;
-  padding-inline: 25px;
   position: relative;
+  padding: 150px 25px 70px 25px;
 }
 .grid {
   position: absolute;
-  top: 52%;
-  left: 10%;
+  top: 60%;
+  left: 1%;
 }
 .top-hero {
   position: absolute;
   top: 28%;
-  right: 10%;
+  right: 4%;
 }
 .hero h1 {
   font-weight: 400;
@@ -87,14 +86,7 @@
   right: 8px;
   transform: rotate(-45deg);
 }
-@media screen and (max-width: 1200px) {
-  .grid {
-    left: 4%;
-  }
-  .top-hero {
-    right: 6%;
-  }
-}
+
 @media screen and (max-width: 976px) {
   .grid {
     left: 2%;
@@ -114,8 +106,7 @@
 }
 @media screen and (max-width: 582px) {
   .hero {
-    min-height: 500px;
-    padding-top: 7rem;
+    padding: 7rem 25px;
     gap: 4rem;
   }
   .hero h1 {
@@ -131,8 +122,9 @@
     font-size: 12px;
   }
   .grid {
-    top: 70%;
+    top: 55%;
     max-width: 60px;
+    z-index: -2;
   }
 }
 @media screen and (max-width: 414px) {
