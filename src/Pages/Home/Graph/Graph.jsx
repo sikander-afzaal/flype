@@ -53,7 +53,7 @@ function Graph() {
       <h1 className="title tactic">Token Metrics</h1>
       <div className="graph-div">
         <div className="left-graph">
-          <div className="info-box">
+          <div className="info-box desktop-info">
             <h2 className="tactic">Token Info</h2>
             <div className="grid-info">
               <div className="info-col">
@@ -106,6 +106,27 @@ function Graph() {
           </div>
         </div>
         <div className="right-graph">
+          <div className="info-box mob-info">
+            <h2 className="tactic">Token Info</h2>
+            <div className="grid-info">
+              <div className="info-col">
+                <h3 className="antikor">Token</h3>
+                <p className="antikor">FLYPE DAO</p>
+              </div>
+              <div className="info-col">
+                <h3 className="antikor">Symbol</h3>
+                <p className="antikor">FLYP</p>
+              </div>
+              <div className="info-col">
+                <h3 className="antikor">Type</h3>
+                <p className="antikor">Utility</p>
+              </div>
+              <div className="info-col">
+                <h3 className="antikor">Total Supply</h3>
+                <p className="antikor">100M</p>
+              </div>
+            </div>
+          </div>
           <img src={graph} alt="" />
         </div>
       </div>

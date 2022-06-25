@@ -154,6 +154,9 @@
   background-color: #46d7d7;
   color: black;
 }
+.mob-info {
+  display: none;
+}
 @media screen and (max-width: 1316px) {
   .graph-div {
     gap: 0px;
@@ -183,6 +186,19 @@
   .graph-div {
     flex-direction: column-reverse;
     margin-bottom: 4rem;
+  }
+  .right-graph {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .desktop-info {
+    display: none;
+  }
+  .mob-info {
+    display: flex;
   }
 }
 @media screen and (max-width: 484px) {
