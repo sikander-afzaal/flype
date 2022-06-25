@@ -2,7 +2,51 @@ import React from "react";
 import "./Graph.css";
 import graph from "../../../Assets/graph.png";
 import graphPatt from "../../../Assets/graph-patt.svg";
+import NftRow from "../../../Components/NftRow/NftRow";
 function Graph() {
+  const rowData = [
+    {
+      first: true,
+      head: "PRE SEED - 27/06/2021",
+      sub: "SOLD OUT",
+      col: [
+        {
+          head: "Price",
+          desc: "$0.0505",
+        },
+        {
+          head: "Token Allocation",
+          desc: "9.9M FLYP",
+        },
+        {
+          head: "Total Sales",
+          desc: "$500K",
+        },
+      ],
+    },
+    {
+      head: "PRIVATE  - 11/07/2022",
+      sub: "OPEN SOON",
+      col: [
+        {
+          head: "Price",
+          desc: "$0.20",
+        },
+        {
+          head: "Token Allocation",
+          desc: "1.7M FLYP",
+        },
+        {
+          head: "FDV",
+          desc: "$20M",
+        },
+        {
+          head: "Total Sales",
+          desc: "up-to $340K",
+        },
+      ],
+    },
+  ];
   return (
     <div className="graph">
       <img src={graphPatt} alt="" className="graph-patt" />
@@ -65,6 +109,22 @@ function Graph() {
           <img src={graph} alt="" />
         </div>
       </div>
+      {rowData.map((elem, key) => {
+        return (
+          <NftRow
+            first={elem?.first}
+            key={"row" + key}
+            head={elem.head}
+            sub={elem.sub}
+            col={elem.col}
+          />
+        );
+      })}
+      <p className="note-nft antikor">
+        The first 72 hours of the private sale will be open to MULTI-PASS NFT
+        holders only with an additional discount of 25% ($0.15).
+      </p>
+      <button className="whitelist pop choose-btn">choose your ticket</button>
     </div>
   );
 }

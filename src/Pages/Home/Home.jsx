@@ -4,6 +4,7 @@ import Graph from "./Graph/Graph";
 import Hero from "./Hero/Hero";
 import "./Home.css";
 import Ticket from "./Ticket/Ticket";
+import Users from "./Users/Users";
 function Home() {
   return (
     <div className="home">
@@ -11,6 +12,7 @@ function Home() {
       <About />
       <Ticket />
       <Graph />
+      <Users />
     </div>
   );
 }

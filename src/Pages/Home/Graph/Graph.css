@@ -5,7 +5,7 @@
   flex-direction: column;
   width: 100%;
   max-width: 1000px;
-  gap: 2rem;
+  gap: 0rem;
   padding: 100px 25px;
   position: relative;
 }
@@ -20,6 +20,7 @@
   align-items: center;
   width: 100%;
   gap: 1.3rem;
+  margin-top: 2rem;
 }
 .left-graph {
   display: flex;
@@ -111,6 +112,47 @@
   font-size: 14px;
   line-height: 110%;
   color: #ffffff;
+}
+.first-top-row {
+  background: #4f4f4f;
+}
+.graph .nft-row:last-of-type .top-row {
+  background: #825aff;
+}
+.first-top-row p {
+  color: #46d7d7;
+}
+.graph .nft-row:last-of-type .top-row p {
+  color: white;
+}
+.graph .nft-row:last-of-type {
+  margin-top: 2rem;
+}
+.note-nft {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  color: #ffffff;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  background: #222325;
+  padding-inline: 20px;
+  height: 119px;
+  margin-top: 10px;
+}
+.graph .choose-btn {
+  background-color: transparent;
+  border-color: #46d7d7;
+  color: #46d7d7;
+  margin-top: 3rem;
+}
+.graph .choose-btn::before {
+  border-left-color: #46d7d7;
+}
+.graph .choose-btn:hover {
+  background-color: #46d7d7;
+  color: black;
 }
 @media screen and (max-width: 1316px) {
   .graph-div {
