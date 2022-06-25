@@ -1,3 +1,10 @@
+.main-tick-cont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
 .ticket {
   display: flex;
   justify-content: center;
@@ -8,8 +15,6 @@
   gap: 3rem;
   padding: 180px 25px 100px 25px;
   position: relative;
-  display: flex;
-  justify-content: center;
 }
 .ticket-box-row {
   width: 100%;
@@ -23,6 +28,12 @@
   left: 0;
   top: 20px;
 }
+.tick-grid {
+  position: absolute;
+  left: 0;
+  top: 40%;
+  z-index: -1;
+}
 .ticket .title {
   text-align: center;
 }
@@ -30,5 +41,13 @@
   .ticket-box-row {
     flex-direction: column;
     justify-content: center;
+  }
+  .tick-grid {
+    top: 20%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .tick-grid {
+    display: none;
   }
 }

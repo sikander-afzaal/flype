@@ -2,6 +2,7 @@ import React from "react";
 import TicketBox from "../../../Components/TicketBox/TicketBox";
 import "./Ticket.css";
 import ticketPatt from "../../../Assets/ticket.svg";
+import ticketGrid from "../../../Assets/tick-grid.svg";
 
 function Ticket() {
   const data = [
@@ -74,20 +75,23 @@ function Ticket() {
   ];
 
   return (
-    <div className="ticket">
-      <img src={ticketPatt} className="tick-patt" alt="" />
-      <h1 className="tactic title">Choose your ticket</h1>
-      <div className="ticket-box-row">
-        {data.map((elem, key) => {
-          return (
-            <TicketBox
-              key={"box" + key}
-              highlight={elem.highlight}
-              col={elem.col}
-              name={elem.name}
-            />
-          );
-        })}
+    <div className="main-tick-cont">
+      <img src={ticketGrid} className="tick-grid" alt="" />
+      <div className="ticket">
+        <img src={ticketPatt} className="tick-patt" alt="" />
+        <h1 className="tactic title">Choose your ticket</h1>
+        <div className="ticket-box-row">
+          {data.map((elem, key) => {
+            return (
+              <TicketBox
+                key={"box" + key}
+                highlight={elem.highlight}
+                col={elem.col}
+                name={elem.name}
+              />
+            );
+          })}
+        </div>
       </div>
     </div>
   );
