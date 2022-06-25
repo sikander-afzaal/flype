@@ -1,5 +1,6 @@
 import React from "react";
 import About from "./About/About";
+import Graph from "./Graph/Graph";
 import Hero from "./Hero/Hero";
 import "./Home.css";
 import Ticket from "./Ticket/Ticket";
@@ -9,6 +10,7 @@ function Home() {
       <Hero />
       <About />
       <Ticket />
+      <Graph />
     </div>
   );
 }
