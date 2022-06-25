@@ -1,0 +1,153 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 800px;
+  gap: 6rem;
+  padding-inline: 25px;
+  position: relative;
+}
+.grid {
+  position: absolute;
+  top: 52%;
+  left: 10%;
+}
+.top-hero {
+  position: absolute;
+  top: 28%;
+  right: 10%;
+}
+.hero h1 {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 110%;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #46d7d7;
+}
+.timer-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+.timer-div .time-box {
+  width: 192px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.1);
+  gap: 10px;
+}
+.time-box h2 {
+  font-size: 40px;
+  line-height: 51px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-weight: 400;
+  color: #ffffff;
+}
+.time-box p {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.6;
+}
+.whitelist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  background: #fc440f;
+  width: 240px;
+  height: 60px;
+  position: relative;
+  border: none;
+  font-size: 16px;
+  color: white;
+  border: 1px solid #825aff;
+}
+.whitelist::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 7px solid white;
+  top: 5px;
+  right: 8px;
+  transform: rotate(-45deg);
+}
+@media screen and (max-width: 1200px) {
+  .grid {
+    left: 4%;
+  }
+  .top-hero {
+    right: 6%;
+  }
+}
+@media screen and (max-width: 976px) {
+  .grid {
+    left: 2%;
+    max-width: 80px;
+  }
+  .top-hero {
+    right: 2%;
+  }
+}
+@media screen and (max-width: 812px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .timer-div .time-box {
+    width: 120px;
+  }
+}
+@media screen and (max-width: 582px) {
+  .hero {
+    min-height: 500px;
+    padding-top: 7rem;
+    gap: 4rem;
+  }
+  .hero h1 {
+    font-size: 1.9rem;
+  }
+  .timer-div .time-box {
+    width: 90px;
+  }
+  .time-box h2 {
+    font-size: 25px;
+  }
+  .time-box p {
+    font-size: 12px;
+  }
+  .grid {
+    top: 70%;
+    max-width: 60px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .timer-div {
+    gap: 10px;
+  }
+  .timer-div .time-box {
+    width: 80px;
+    height: auto;
+    padding: 1rem 0rem;
+  }
+  .time-box h2 {
+    font-size: 25px;
+  }
+  .time-box p {
+    font-size: 12px;
+  }
+}
