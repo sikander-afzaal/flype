@@ -7,7 +7,7 @@
   flex-direction: column;
   text-align: left;
   background: rgba(255, 255, 255, 0.1);
-  border: 1px solid #ffffff;
+  border: 1px solid var(--button-bg);
   position: relative;
 }
 .ticket-box::before {
@@ -17,7 +17,7 @@
   height: 0;
   border-top: 7px solid transparent;
   border-bottom: 7px solid transparent;
-  border-left: 7px solid white;
+  border-left: 7px solid var(--button-bg);
   top: 5px;
   right: 8px;
   transform: rotate(-45deg);
@@ -33,7 +33,7 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 100%;
-  color: #ffffff;
+  color: var(--button-bg);
 }
 .tick-col,
 .tick-col-drop {
@@ -100,5 +100,13 @@
 }
 .tick-white {
   background: transparent;
-  border-color: white;
+  border-color: var(--button-bg);
+  color: var(--button-bg);
+}
+.tick-white::before {
+  border-left: 7px solid var(--button-bg);
+}
+.tick-white:hover {
+  background-color: var(--button-bg);
+  color: black;
 }

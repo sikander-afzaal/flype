@@ -73,6 +73,12 @@
   font-size: 16px;
   color: white;
   border: 1px solid #825aff;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+.whitelist:hover {
+  background-color: white;
+  color: #fc440f;
 }
 .whitelist::before {
   content: "";

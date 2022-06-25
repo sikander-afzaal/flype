@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./TicketBox.css";
 import arrow from "../../Assets/Arrow.svg";
-function TicketBox() {
+function TicketBox({ highlight, name, col }) {
   const [drop, setDrop] = useState(false);
   const [val, setVal] = useState(1);
   const dropHandler = () => {
@@ -12,25 +12,17 @@ function TicketBox() {
     setDrop(false);
   };
   return (
-    <div className="ticket-box">
+    <div className="ticket-box" style={{ "--button-bg": highlight }}>
       <div className="ticket-box-cont">
-        <h1 className="tactic">Economy</h1>
-        <div className="tick-col">
-          <h2 className="antikor">Available Tickets</h2>
-          <p className="antikor">100/200</p>
-        </div>
-        <div className="tick-col">
-          <h2 className="antikor">Ticket Size</h2>
-          <p className="antikor">$500</p>
-        </div>
-        <div className="tick-col">
-          <h2 className="antikor">You will get</h2>
-          <p className="antikor">1,666 FLYP</p>
-        </div>
-        <div className="tick-col">
-          <h2 className="antikor">Lockup</h2>
-          <p className="antikor">300 days</p>
-        </div>
+        <h1 className="tactic">{name}</h1>
+        {col.map((elem, key) => {
+          return (
+            <div className="tick-col" key={"col" + key}>
+              <h2 className="antikor">{elem.head}</h2>
+              <p className="antikor">{elem.sub}</p>
+            </div>
+          );
+        })}
         <div className="tick-col-drop">
           <h2 className="antikor">Tickets</h2>
           <div className="drop-down">

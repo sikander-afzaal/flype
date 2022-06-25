@@ -5,8 +5,8 @@
   flex-direction: column;
   width: 100%;
   max-width: 1000px;
-  gap: 2rem;
-  padding: 100px 25px;
+  gap: 3rem;
+  padding: 180px 25px 100px 25px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -17,4 +17,18 @@
   justify-content: space-between;
   align-items: center;
   gap: 30px;
+}
+.tick-patt {
+  position: absolute;
+  left: 0;
+  top: 20px;
+}
+.ticket .title {
+  text-align: center;
+}
+@media screen and (max-width: 920px) {
+  .ticket-box-row {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
