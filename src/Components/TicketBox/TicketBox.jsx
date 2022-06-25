@@ -39,12 +39,6 @@ function TicketBox({ highlight, name, col }) {
               <p className="option antikor" onClick={valHandler}>
                 3
               </p>
-              <p className="option antikor" onClick={valHandler}>
-                4
-              </p>
-              <p className="option antikor" onClick={valHandler}>
-                5
-              </p>
             </div>
           </div>
         </div>

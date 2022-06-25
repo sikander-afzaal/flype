@@ -181,7 +181,8 @@
     flex: none;
   }
   .graph-div {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    margin-bottom: 4rem;
   }
 }
 @media screen and (max-width: 484px) {

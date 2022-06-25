@@ -37,6 +37,11 @@
 .ticket .title {
   text-align: center;
 }
+@media screen and (max-width: 1120px) {
+  .tick-grid {
+    display: none;
+  }
+}
 @media screen and (max-width: 920px) {
   .ticket-box-row {
     flex-direction: column;
@@ -44,9 +49,10 @@
   }
   .tick-grid {
     top: 20%;
+    display: block;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 486px) {
   .tick-grid {
     display: none;
   }
