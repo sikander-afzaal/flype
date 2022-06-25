@@ -5,7 +5,7 @@ function About() {
   return (
     <div className="about">
       <img src={patt} alt="" />
-      <h1 className="tactic">Special VCs-only rates</h1>
+      <h1 className="tactic title">Special VCs-only rates</h1>
       <p className="antikor">
         Pre-launch token private sales are usually open to VCs only, and are not
         revealed to the general public.

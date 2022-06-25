@@ -14,7 +14,7 @@
   top: 0;
   right: 0;
 }
-.about h1 {
+.title {
   font-weight: 400;
   font-size: 40px;
   line-height: 110%;
@@ -33,7 +33,7 @@
   .about img {
     top: -90px;
   }
-  .about h1 {
+  .title {
     font-size: 30px;
   }
   .about {

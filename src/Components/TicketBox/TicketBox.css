@@ -1,0 +1,104 @@
+.ticket-box {
+  width: 310px;
+  height: 494px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #ffffff;
+  position: relative;
+}
+.ticket-box::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 7px solid white;
+  top: 5px;
+  right: 8px;
+  transform: rotate(-45deg);
+}
+.ticket-box-cont {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+.ticket-box-cont h1 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  color: #ffffff;
+}
+.tick-col,
+.tick-col-drop {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.tick-col h2,
+.tick-col-drop h2 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #ffffff;
+}
+.tick-col p {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140%;
+  color: #ffffff;
+}
+.drop-down {
+  position: relative;
+  height: fit-content;
+}
+.main-drop {
+  width: 69px;
+  height: 32px;
+  background: #0a0b0d;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 700;
+}
+.drop-down-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: fit-content;
+  padding: 10px 0px;
+  background: #0a0b0d;
+  color: white;
+  z-index: 4;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  display: none;
+}
+.option {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 10px;
+  font-weight: 700;
+  width: 100%;
+}
+
+.display {
+  display: flex;
+}
+.tick-white {
+  background: transparent;
+  border-color: white;
+}

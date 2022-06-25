@@ -1,0 +1,20 @@
+.ticket {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1000px;
+  gap: 2rem;
+  padding: 100px 25px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.ticket-box-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
